@@ -36,6 +36,7 @@ class ViewFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        viewModel.getInfo()
         _binding = FragmentViewBinding.inflate(layoutInflater)
         return binding.root
     }
