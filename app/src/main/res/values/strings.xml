@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Test work</string>
+    <string name="begin_and_end_date">Begin and End date</string>
+    <string name="title">Title</string>
+    <string name="artist_role">Artist</string>
+    <string name="vincent">Vincent</string>
+    <string name="department">DEPARTMENT</string>
+    <string name="medium">MEDIUM</string>
+    <string name="dimensions">DIMENSIONS</string>
+    <string name="dimension_text">30x20</string>
+    <string name="btn_try_again">Try again…</string>
+</resources>
