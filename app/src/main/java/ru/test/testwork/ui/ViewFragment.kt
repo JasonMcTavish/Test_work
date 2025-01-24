@@ -113,15 +113,22 @@ class ViewFragment : Fragment() {
         binding.apply {
             imageView.loadImage(info.primaryImageSmall!!)
             title.text = info.title
-            beginEndDate.text = "${info.objectBeginDate} - ${info.objectEndDate}"
-            if (info.artistRole != null) {
+            beginEndDate.text =
+                String.format(getString(R.string.year), info.objectBeginDate, info.objectEndDate)
+
+            if (info.artistRole != "") {
                 artistRole.text = info.artistRole
-                artistNameBio.text = "${info.artistDisplayName} (${info.artistDisplayBio})"
+                artistNameBio.text = String.format(
+                    getString(R.string.bio),
+                    info.artistDisplayName,
+                    info.artistDisplayBio
+                )
             } else {
-                artistGroup.isVisible = false
+                artistRole.isVisible = false
+                artistNameBio.isVisible = false
             }
 
-            if (info.department != null) {
+            if (info.department != "") {
                 departmentText.text = info.department
             } else {
                 departmentGroup.isVisible = false

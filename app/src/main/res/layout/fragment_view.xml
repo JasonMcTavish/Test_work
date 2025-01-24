@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/broun"
     tools:context=".ui.ViewFragment">
 
     <!-- Progress group -->
@@ -37,7 +38,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/image_group"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -54,7 +56,8 @@
             android:id="@+id/back_arrow_btn"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
-            android:layout_margin="@dimen/padding"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp"
             android:background="@drawable/custom_button"
             android:src="@drawable/back_arrow"
             app:layout_constraintStart_toStartOf="@id/imageView"
@@ -65,7 +68,8 @@
             android:id="@+id/enhance_btn"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
-            android:layout_margin="@dimen/padding"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp"
             android:background="@drawable/custom_button"
             android:src="@drawable/enhance_arrow"
             app:layout_constraintEnd_toEndOf="@id/imageView"
@@ -75,7 +79,7 @@
 
         <TextView
             android:id="@+id/title"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/padding"
             android:fontFamily="@font/roboto_regular"
@@ -95,8 +99,8 @@
             android:text="@string/begin_and_end_date"
             android:textColor="@color/white"
             android:textSize="@dimen/text_size"
-            android:layout_marginBottom="@dimen/padding"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:paddingBottom="@dimen/padding"
+            app:layout_constraintBottom_toBottomOf="@id/imageView"
             app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
