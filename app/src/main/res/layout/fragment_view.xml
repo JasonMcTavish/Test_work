@@ -56,8 +56,8 @@
             android:id="@+id/back_arrow_btn"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
-            android:layout_marginTop="30dp"
             android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/custom_button"
             android:src="@drawable/back_arrow"
             app:layout_constraintStart_toStartOf="@id/imageView"
@@ -68,8 +68,8 @@
             android:id="@+id/enhance_btn"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
-            android:layout_marginTop="30dp"
             android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/custom_button"
             android:src="@drawable/enhance_arrow"
             app:layout_constraintEnd_toEndOf="@id/imageView"
@@ -84,6 +84,7 @@
             android:layout_marginHorizontal="@dimen/padding"
             android:fontFamily="@font/roboto_regular"
             android:text="@string/title"
+            android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="@dimen/title_size"
             android:textStyle="bold"
@@ -96,10 +97,10 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/padding"
             android:fontFamily="@font/roboto_regular"
+            android:paddingBottom="@dimen/padding"
             android:text="@string/begin_and_end_date"
             android:textColor="@color/white"
             android:textSize="@dimen/text_size"
-            android:paddingBottom="@dimen/padding"
             app:layout_constraintBottom_toBottomOf="@id/imageView"
             app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -131,12 +132,43 @@
                     android:layout_marginHorizontal="@dimen/padding"
                     android:fontFamily="@font/roboto_regular"
                     android:text="@string/artist_role"
+                    android:textAllCaps="true"
                     android:textColor="@color/white"
                     android:textSize="@dimen/title_size"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/artist_name_bio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/padding"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/vincent"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/culture_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/padding">
+
+                <TextView
+                    android:id="@+id/culture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/padding"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/culture"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/culture_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/padding"
@@ -160,6 +192,7 @@
                     android:layout_marginHorizontal="@dimen/padding"
                     android:fontFamily="@font/roboto_regular"
                     android:text="@string/department"
+                    android:textAllCaps="true"
                     android:textColor="@color/white"
                     android:textSize="@dimen/title_size"
                     android:textStyle="bold" />
@@ -189,6 +222,7 @@
                     android:layout_marginHorizontal="@dimen/padding"
                     android:fontFamily="@font/roboto_regular"
                     android:text="@string/medium"
+                    android:textAllCaps="true"
                     android:textColor="@color/white"
                     android:textSize="@dimen/title_size"
                     android:textStyle="bold" />
@@ -218,6 +252,7 @@
                     android:layout_marginHorizontal="@dimen/padding"
                     android:fontFamily="@font/roboto_regular"
                     android:text="@string/dimensions"
+                    android:textAllCaps="true"
                     android:textColor="@color/white"
                     android:textSize="@dimen/title_size"
                     android:textStyle="bold" />

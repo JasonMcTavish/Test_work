@@ -128,6 +128,12 @@ class ViewFragment : Fragment() {
                 artistNameBio.isVisible = false
             }
 
+            if (info.culture != "") {
+                cultureText.text = info.culture
+            } else {
+                cultureGroup.isVisible = false
+            }
+
             if (info.department != "") {
                 departmentText.text = info.department
             } else {
